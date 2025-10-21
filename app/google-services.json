@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "434499837699",
+    "project_id": "banco-de-senhas-f4d9a",
+    "storage_bucket": "banco-de-senhas-f4d9a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434499837699:android:923f2e5041d76d54535336",
+        "android_client_info": {
+          "package_name": "com.ulbra.bancodesenhas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcOXIN_59o--igJo4Q53sY386OOYZi4W4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
