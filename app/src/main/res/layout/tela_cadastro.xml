@@ -13,8 +13,7 @@
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/dark_blue"
-        android:layout_marginTop="110sp"
-        android:marginBottom="24dp"/>
+        android:layout_marginTop="110sp"/>
 
     <EditText
         android:id="@+id/edtEmail"
@@ -45,6 +44,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cadastrar"
-        android:marginTop="16dp"
         android:backgroundTint="@color/blue"/>
 </LinearLayout>
