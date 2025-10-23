@@ -32,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void abrirCadastro() {
+        Intent intent = new Intent(MainActivity.this, CadastroActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
         btnLogar = findViewById(R.id.btnLogar);
         txtTitulo = findViewById(R.id.txtTitulo);
         txtCadastrar = findViewById(R.id.txtCadastrar);
+
+        txtCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirCadastro();
+            }
+        });
 
 
         btnLogar.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +71,11 @@ public class MainActivity extends AppCompatActivity {
                             .addOnCompleteListener(task -> {
                                 if(task.isSuccessful()){
                                     Toast.makeText(MainActivity.this, "Login realizado com sucesso!", Toast.LENGTH_SHORT).show();
+
+                                    // Obter UID do usuário autenticado
+                                    String uid = fb.getCurrentUser().getUid();
+                                    Log.d("UIDFirebase", "UID do usuário: " + uid);
+
                                     // Redirecionar para outra Activity
                                     abrirMenu();
                                 } else {

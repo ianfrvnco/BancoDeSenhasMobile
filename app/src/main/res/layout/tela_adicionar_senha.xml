@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Senha"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80sp"/>
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do App/Site"
+        android:layout_marginTop="45sp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Login"
+        android:layout_marginTop="35sp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:layout_marginTop="35sp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edtSenhaConfirma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmação de senha"
+        android:layout_marginVertical="35sp"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:backgroundTint="@color/blue"
+        android:layout_marginBottom="1sp"
+        android:layout_marginTop="20sp"
+        />
+</LinearLayout>
