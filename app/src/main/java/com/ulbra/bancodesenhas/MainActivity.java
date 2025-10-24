@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     fb.signInWithEmailAndPassword(email, senha)
                             .addOnCompleteListener(task -> {
                                 if(task.isSuccessful()){
-                                    Toast.makeText(MainActivity.this, "Login realizado com sucesso!", Toast.LENGTH_SHORT).show();
+                                   // Toast.makeText(MainActivity.this, "Login realizado com sucesso!", Toast.LENGTH_SHORT).show();
 
                                     // Obter UID do usuário autenticado
                                     String uid = fb.getCurrentUser().getUid();

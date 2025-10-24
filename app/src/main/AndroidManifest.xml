@@ -27,6 +27,8 @@
             android:exported="true"/>
         <activity android:name="com.ulbra.bancodesenhas.MenuActivity"
             android:exported="true"/>
+        <activity android:name="com.ulbra.bancodesenhas.RegistroSenhaActivity"
+            android:exported="true"/>
 
     </application>
 
